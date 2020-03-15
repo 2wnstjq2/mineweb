@@ -43,6 +43,13 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        function imginfo() {
+            var dt = new Date();
+            var md ='assets/images/newpl/'+ (dt.getMonth() + 1 ) +'.'+ dt.getDate()+'.png';
+            return md;
+        }
+    </script>
 
     <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
         <div class="nano">
@@ -301,64 +308,66 @@
                     <!-- 배추사진 -->
                     <div class="col-lg-6">
                         <div class="row">                       
-                            <img class="img-responsive" src="assets/images/baechu.png" alt="" style="width:200px;"/>
-                            
+                            <img id="newcam" src="" alt="" style="width:200px;"/>
+                            <script>document.getElementById('newcam').src=imginfo()</script>                            
                         </div>
                     </div>
 
                     <!-- 그래프 -->
                     <li class="all_graf">
-                        <div class="col-lg-4">
-                            <div class="card alert nestable-cart">
-                                <div class="card-header">
-                                    <h4>온도</h4>
-                                    <div class="card-header-right-icon">
-                                        <ul>
-                                            <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
-                                        </ul>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card alert nestable-cart">
+                                    <div class="card-header">
+                                        <h4>SITE TRAFFIC</h4>
+                                        <div class="card-header-right-icon">
+                                            <ul>
+                                                <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sparkline-unix">
+                                        <div id="sparkline8"></div>
                                     </div>
                                 </div>
-                                <div class="sparkline-unix">
-                                    <div id="sparkline8" ></div>
-                                    <p></p>
-                                </div>
+                                <!-- /# card -->
                             </div>
-                            <!-- /# card -->
-                        </div>
-                        <!-- /# column -->
-                        <div class="col-lg-4">
-                            <div class="card alert nestable-cart">
-                                <div class="card-header">
-                                    <h4>습도</h4>
-                                    <div class="card-header-right-icon">
-                                        <ul>
-                                            <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
-                                        </ul>
+                            <!-- /# column -->
+                            <div class="col-lg-4">
+                                <div class="card alert nestable-cart">
+                                    <div class="card-header">
+                                        <h4>SITE TRAFFIC</h4>
+                                        <div class="card-header-right-icon">
+                                            <ul>
+                                                <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sparkline-unix">
+                                        <div id="sparkline9"></div>
                                     </div>
                                 </div>
-                                <div class="sparkline-unix">
-                                    <div id="sparkline9"></div>
-                                </div>
+                                <!-- /# card -->
                             </div>
-                            <!-- /# card -->
-                        </div>
-                        <!-- /# column -->
-                        <div class="col-lg-4">
-                            <div class="card alert nestable-cart">
-                                <div class="card-header">
-                                    <h4>적외선</h4>
-                                    <div class="card-header-right-icon">
-                                        <ul>
-                                            <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
-                                        </ul>
+                            <!-- /# column -->
+                            <div class="col-lg-4">
+                                <div class="card alert nestable-cart">
+                                    <div class="card-header">
+                                        <h4>SITE TRAFFIC</h4>
+                                        <div class="card-header-right-icon">
+                                            <ul>
+                                                <li class="doc-link"><a href="#"><i class="ti-link"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="sparkline-unix">
+                                        <div id="sparkline10"></div>
                                     </div>
                                 </div>
-                                <div class="sparkline-unix">
-                                    <div id="sparkline10"></div>
-                                </div>
+                                <!-- /# card -->
                             </div>
-                            <!-- /# card -->
-                        </div>
+                            <!-- /# column -->
+                        </div>                        
                         <!-- /# column -->
                     </li>
                     
@@ -381,6 +390,7 @@
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
     </div>
+
     <!-- jquery vendor -->
     <script src="assets/js/lib/jquery.min.js"></script>
     <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
@@ -391,7 +401,7 @@
     <script src="assets/js/lib/bootstrap.min.js"></script>
     <!-- bootstrap -->
     <script src="assets/js/lib/mmc-common.js"></script>
-    <script src="assets/js/lib/mmc-chat.js"></script>
+    
 
     <!--  Datamap -->
     <script src="assets/js/lib/datamap/d3.min.js"></script>
@@ -409,7 +419,7 @@
     <!-- sparkline init-->
     <script src="assets/js/lib/sparklinechart/sparkline.init.js"></script>
     <!-- sparkline init-->
-
+    <script src="assets/js/scripts.js"></script>
     <!-- scripit init-->
 
 

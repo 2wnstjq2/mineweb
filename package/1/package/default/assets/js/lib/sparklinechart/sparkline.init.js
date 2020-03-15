@@ -92,7 +92,7 @@ $(document).ready(function() {
             maxSpotColor: '#99d683',
             highlightLineColor: 'rgba(0, 0, 0, 0.2)',
             highlightSpotColor: '#99d683'
-            
+        });
 
         $("#sparkline9").sparkline([0,2,8,6,8,5,6,4,8,6,6,2 ], {
             type: 'line',
